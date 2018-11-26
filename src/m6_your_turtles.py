@@ -29,10 +29,11 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
 #
 ########################################################################
 import rosegraphics as rg
+window=rg.TurtleWindow()
 
 BlueBro = rg.SimpleTurtle('turtle')
 BlueBro.pen = rg.Pen('blue',5)
-BlueBro.speed = 25
+BlueBro.speed = 1000
 for k in range (80):
     BlueBro.draw_square(100)
     BlueBro.pen_up()
@@ -43,12 +44,15 @@ for k in range (80):
 GreenBro = rg.SimpleTurtle('turtle')
 GreenBro.pen = rg.Pen('green',5)
 GreenBro.speed = 25
-x = 100
-y = 100
-for j in range (5):
-     GreenBro.draw_circle(150)
+x = 50
+y = 50
+GreenBro.go_to(rg.Point(x,y))
+for j in range (15):
      GreenBro.pen_up
      x = x + 20
      y = y + 20
      GreenBro.go_to(rg.Point(x,y))
      GreenBro.pen_down
+     GreenBro.draw_circle(150)
+
+window.close_on_mouse_click()

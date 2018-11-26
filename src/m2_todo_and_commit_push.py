@@ -16,9 +16,9 @@ print('Hello, World')
 
 ###############################################################################
 #
-# TODO: 1.
+# : 1.
 #   (Yes, that means for YOU to DO things per these instructions:)
-#
+#Done
 #   Run this module by right clicking anywhere in this window
 #   and selecting
 #        Run 'name of file'
